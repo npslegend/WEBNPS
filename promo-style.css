@@ -1,0 +1,130 @@
+/* Reset dasar */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(45deg, #00ffea, #ff00ff, #00ffea, #ff00ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -1;
+  filter: blur(100px);
+}
+
+@keyframes gradientBG {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.animated-title {
+  font-size: 3rem;
+  color: #00ffea;
+  text-shadow: 0 0 10px #00ffea, 0 0 20px #ff00ff, 0 0 30px #00ffea;
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  0% { text-shadow: 0 0 5px #00ffea, 0 0 10px #ff00ff; }
+  100% { text-shadow: 0 0 20px #00ffea, 0 0 30px #ff00ff; }
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 5px #00ffea;
+}
+
+/* Neon Buttons */
+.neon-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  color: #00ffea;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #00ffea;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffea, 0 0 20px #ff00ff;
+  transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+  color: #ff00ff;
+  border-color: #ff00ff;
+  box-shadow: 0 0 20px #00ffea, 0 0 30px #ff00ff, 0 0 40px #00ffea;
+  transform: scale(1.1);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background: #111;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #00ffea;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  width: 250px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffea;
+}
+
+.card:hover {
+  box-shadow: 0 0 30px #ff00ff;
+  transform: translateY(-10px);
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 50px 20px;
+  background: black;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  color: #00ffea;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #00ffea;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0a0a;
+  border-top: 1px solid #00ffea;
+  color: #fff;
+}
